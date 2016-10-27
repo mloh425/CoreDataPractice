@@ -1,0 +1,64 @@
+{
+    "Houses": [
+               {
+                "name" : "Lannister",
+                "motto" : "Hear me Roar!",
+                "location" : "Casterly Rock",
+               "members" :  [
+                           {
+                           "firstName" : "Tyrion",
+                           "lastName" : "Lannister"
+                           },
+                           {
+                           "firstName" : "Tywin",
+                           "lastName" : "Lannister",
+                           }
+                           ]
+               },
+               {
+                "name" : "Stark",
+                "motto" : "Winter is Coming",
+                "location" : "Winterfell",
+               "members" :  [
+                           {
+                           "firstName" : "Ned",
+                           "lastName" : "Stark"
+                           },
+                           {
+                           "firstName" : "Robb",
+                           "lastName" : "Stark",
+                           }
+                           ]
+                },
+                {
+                "name" : "Tyrell",
+                "motto" : "Growing Strong",
+                "location" : "High Garden",
+               "members" :  [
+                           {
+                           "firstName" : "Margery",
+                           "lastName" : "Tyrell"
+                           },
+                           {
+                           "firstName" : "Loras",
+                           "lastName" : "Tyrell",
+                           }
+                           ]
+                },
+                {
+                "name" : "Targaryen",
+                "motto" : "Fire and Blood",
+                "location" : "Essos",
+                "members" : [
+                           {
+                           "firstName" : "Daenerys",
+                           "lastName" : "Targaryen"
+                           },
+                           {
+                           "firstName" : "Viserys",
+                           "lastName" : "Targaryen",
+                           }
+                           ]
+                }
+    ]
+}
