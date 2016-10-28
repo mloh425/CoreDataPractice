@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
+    <entity name="House" representedClassName="House" syncable="YES">
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="motto" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Member" inverseName="house" inverseEntity="Member" syncable="YES"/>
     </entity>
-    <entity name="Member" representedClassName="Member" syncable="YES" codeGenerationType="class">
+    <entity name="Member" representedClassName="Member" syncable="YES">
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="members" inverseEntity="House" syncable="YES"/>
     </entity>
     <elements>
-        <element name="House" positionX="-9" positionY="228" width="128" height="103"/>
-        <element name="Member" positionX="-9" positionY="36" width="128" height="88"/>
+        <element name="House" positionX="-9" positionY="228" width="128" height="105"/>
+        <element name="Member" positionX="-9" positionY="36" width="128" height="90"/>
     </elements>
 </model>

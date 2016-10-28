@@ -75,22 +75,17 @@ class CoreDataStack {
                                         return
                                     }
                                     
-                                    print(firstName)
+                                    //print(firstName)
                                     newMember.firstName = firstName
                                     
                                     guard let lastName = member["lastName"] as? String else {
                                         return
                                     }
                                     
-                                    print(lastName)
+                                    //print(lastName)
                                     newMember.lastName = lastName
                                     
-                                    guard let houseName = newHouse.name else {
-                                        return
-                                    }
-                                    
-                                    print(houseName)
-                                    newMember.houseName = houseName
+                                    newMember.house = newHouse
                                 }
                             }
                             

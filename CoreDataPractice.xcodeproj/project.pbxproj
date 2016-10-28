@@ -19,6 +19,10 @@
 		344B71501DB997EE004862A0 /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B714F1DB997ED004862A0 /* MembersTableViewController.swift */; };
 		344B71521DB9BDC9004862A0 /* houses.json in Resources */ = {isa = PBXBuildFile; fileRef = 344B71511DB9BDC9004862A0 /* houses.json */; };
 		344B71561DBAD4BB004862A0 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B71551DBAD4BB004862A0 /* HouseTableViewCell.swift */; };
+		34E57ABE1DC2FE230063829A /* House+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E57ABA1DC2FE230063829A /* House+CoreDataClass.swift */; };
+		34E57ABF1DC2FE230063829A /* House+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E57ABB1DC2FE230063829A /* House+CoreDataProperties.swift */; };
+		34E57AC01DC2FE230063829A /* Member+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E57ABC1DC2FE230063829A /* Member+CoreDataClass.swift */; };
+		34E57AC11DC2FE230063829A /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E57ABD1DC2FE230063829A /* Member+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		344B714F1DB997ED004862A0 /* MembersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
 		344B71511DB9BDC9004862A0 /* houses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = houses.json; sourceTree = "<group>"; };
 		344B71551DBAD4BB004862A0 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
+		34E57ABA1DC2FE230063829A /* House+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "House+CoreDataClass.swift"; path = "../House+CoreDataClass.swift"; sourceTree = "<group>"; };
+		34E57ABB1DC2FE230063829A /* House+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "House+CoreDataProperties.swift"; path = "../House+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		34E57ABC1DC2FE230063829A /* Member+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataClass.swift"; path = "../Member+CoreDataClass.swift"; sourceTree = "<group>"; };
+		34E57ABD1DC2FE230063829A /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataProperties.swift"; path = "../Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,10 @@
 		344B71541DBAD486004862A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34E57ABA1DC2FE230063829A /* House+CoreDataClass.swift */,
+				34E57ABB1DC2FE230063829A /* House+CoreDataProperties.swift */,
+				34E57ABC1DC2FE230063829A /* Member+CoreDataClass.swift */,
+				34E57ABD1DC2FE230063829A /* Member+CoreDataProperties.swift */,
 				344B714B1DB99749004862A0 /* CoreDataStack.swift */,
 			);
 			name = Model;
@@ -300,12 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E57AC01DC2FE230063829A /* Member+CoreDataClass.swift in Sources */,
+				34E57ABF1DC2FE230063829A /* House+CoreDataProperties.swift in Sources */,
 				344B71231DB99653004862A0 /* CoreDataPractice.xcdatamodeld in Sources */,
 				344B714E1DB997DA004862A0 /* HousesTableViewController.swift in Sources */,
+				34E57ABE1DC2FE230063829A /* House+CoreDataClass.swift in Sources */,
 				344B711B1DB99653004862A0 /* AppDelegate.swift in Sources */,
 				344B71501DB997EE004862A0 /* MembersTableViewController.swift in Sources */,
 				344B71561DBAD4BB004862A0 /* HouseTableViewCell.swift in Sources */,
 				344B714C1DB99749004862A0 /* CoreDataStack.swift in Sources */,
+				34E57AC11DC2FE230063829A /* Member+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +568,7 @@
 				344B71441DB99654004862A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		344B71451DB99654004862A0 /* Build configuration list for PBXNativeTarget "CoreDataPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +577,7 @@
 				344B71471DB99654004862A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		344B71481DB99654004862A0 /* Build configuration list for PBXNativeTarget "CoreDataPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +586,7 @@
 				344B714A1DB99654004862A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

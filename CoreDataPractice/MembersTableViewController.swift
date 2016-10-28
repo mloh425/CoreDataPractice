@@ -10,9 +10,19 @@ import UIKit
 
 class MembersTableViewController: UITableViewController {
 
+    var house: House?
+    var memberArray = [Member]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView .dataSource = self
+        if let houseObject = house,
+            let memberSet = houseObject.members {
+            for member in memberSet {
+                memberArray.append(member as! Member)
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +39,23 @@ class MembersTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return memberArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = "\(memberArray[indexPath.row].firstName!) \(memberArray[indexPath.row].lastName!)"
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

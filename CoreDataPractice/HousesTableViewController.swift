@@ -15,6 +15,7 @@ class HousesTableViewController: UITableViewController {
 //    var houses = [NSManagedObject]()
     
     var houses = [House]()
+    var selectedHouse: House?
     let coreDataStack = CoreDataStack()
     
     override func viewDidLoad() {
@@ -62,6 +63,13 @@ class HousesTableViewController: UITableViewController {
             // TODO: handle the error
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMemberTableViewSegue" {
+            let memberTableViewController = segue.destination as! MembersTableViewController
+            memberTableViewController.house = selectedHouse
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -88,6 +96,11 @@ class HousesTableViewController: UITableViewController {
         cell.houseLocationLabel.text = house.location
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedHouse = houses[indexPath.row]
+        performSegue(withIdentifier: "toMemberTableViewSegue", sender: self)
     }
  
 
